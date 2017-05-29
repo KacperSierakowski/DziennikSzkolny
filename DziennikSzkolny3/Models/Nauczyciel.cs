@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -10,21 +11,20 @@ namespace DziennikSzkolny3.Models
 
         public int NauczycielID { get; set; }
         public int KlasaID { get; set; }
-        //[Required]
-        //[MaxLength(20)]
-        //[MinLength(2)]
+        [Required]
+        [MaxLength(20), MinLength(2)]
         public string Imie { get; set; }
-        //[Required]
-        //[MaxLength(20)]
-        //[MinLength(2)]
+        [Required]
+        [MaxLength(30), MinLength(2)]
         public string Nazwisko { get; set; }
-        //[Required]
+        [Required]
+        [Display(Name = "Data urodzenia")]
         public DateTime DataUrodzenia { get; set; }
-        //[Phone]
-        //[MaxLength(11)]
-        //[MinLength(9)]
+        [Phone]
+        [MaxLength(11)]
+        [MinLength(9)]
         public string Telefon { get; set; }//na zwyklego inta
-        //[EmailAddress]
+        [EmailAddress]
         public string Email { get; set; }
 
         public virtual ICollection<Klasa> Klasy_Nauczyciela { get; set; }

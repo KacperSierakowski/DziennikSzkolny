@@ -168,6 +168,38 @@
     <Compile Include="Migrations\201705251304275_Migra1.Designer.cs">
       <DependentUpon>201705251304275_Migra1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705281242354_ChangedAdressDependencies.cs" />
+    <Compile Include="Migrations\201705281242354_ChangedAdressDependencies.Designer.cs">
+      <DependentUpon>201705281242354_ChangedAdressDependencies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705291033112_DataAdnotationsAdress.cs" />
+    <Compile Include="Migrations\201705291033112_DataAdnotationsAdress.Designer.cs">
+      <DependentUpon>201705291033112_DataAdnotationsAdress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705291035132_DataAdnotationsKlasa.cs" />
+    <Compile Include="Migrations\201705291035132_DataAdnotationsKlasa.Designer.cs">
+      <DependentUpon>201705291035132_DataAdnotationsKlasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705291037334_DataAdnotationsNauczyciel.cs" />
+    <Compile Include="Migrations\201705291037334_DataAdnotationsNauczyciel.Designer.cs">
+      <DependentUpon>201705291037334_DataAdnotationsNauczyciel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705291039302_DataAdnotationsUczen.cs" />
+    <Compile Include="Migrations\201705291039302_DataAdnotationsUczen.Designer.cs">
+      <DependentUpon>201705291039302_DataAdnotationsUczen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705291041076_DataAdnotationsPrzedmiot.cs" />
+    <Compile Include="Migrations\201705291041076_DataAdnotationsPrzedmiot.Designer.cs">
+      <DependentUpon>201705291041076_DataAdnotationsPrzedmiot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705291044073_DataAdnotationsUczen1.cs" />
+    <Compile Include="Migrations\201705291044073_DataAdnotationsUczen1.Designer.cs">
+      <DependentUpon>201705291044073_DataAdnotationsUczen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705291045530_DataAdnotationsUwagi.cs" />
+    <Compile Include="Migrations\201705291045530_DataAdnotationsUwagi.Designer.cs">
+      <DependentUpon>201705291045530_DataAdnotationsUwagi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Adres.cs" />
     <Compile Include="Models\DziennikSzkolny3_DB.cs" />
@@ -236,6 +268,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705251304275_Migra1.resx">
       <DependentUpon>201705251304275_Migra1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705281242354_ChangedAdressDependencies.resx">
+      <DependentUpon>201705281242354_ChangedAdressDependencies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705291033112_DataAdnotationsAdress.resx">
+      <DependentUpon>201705291033112_DataAdnotationsAdress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705291035132_DataAdnotationsKlasa.resx">
+      <DependentUpon>201705291035132_DataAdnotationsKlasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705291037334_DataAdnotationsNauczyciel.resx">
+      <DependentUpon>201705291037334_DataAdnotationsNauczyciel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705291039302_DataAdnotationsUczen.resx">
+      <DependentUpon>201705291039302_DataAdnotationsUczen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705291041076_DataAdnotationsPrzedmiot.resx">
+      <DependentUpon>201705291041076_DataAdnotationsPrzedmiot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705291044073_DataAdnotationsUczen1.resx">
+      <DependentUpon>201705291044073_DataAdnotationsUczen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705291045530_DataAdnotationsUwagi.resx">
+      <DependentUpon>201705291045530_DataAdnotationsUwagi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

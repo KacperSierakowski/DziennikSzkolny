@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -9,7 +10,8 @@ namespace DziennikSzkolny3.Models
     {
         public int KlasaID { get; set; }
         public int NauczycielID { get; set; }
-
+        [MaxLength(20), MinLength(2)]
+        [Display(Name = "Nazwa klasy")]
         public string Nazwa { get; set; }
 
 

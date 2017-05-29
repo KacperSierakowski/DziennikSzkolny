@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -9,7 +10,8 @@ namespace DziennikSzkolny3.Models
     {
 
         public int PrzedmiotID { get; set; }
-        //[MaxLength(15)]
+        [Required]
+        [MinLength(2), MaxLength(15)]
         public string Nazwa_Przedmiotu { get; set; }
         public virtual ICollection<Klasa> Klasy_Ktore_Uczace { get; set; }
         public virtual ICollection<Nauczyciel> Nauczyciele_Wykladajacy_Przedmiot { get; set; }

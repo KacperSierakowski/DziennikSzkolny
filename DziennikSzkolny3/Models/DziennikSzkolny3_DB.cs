@@ -8,11 +8,10 @@ namespace DziennikSzkolny3.Models
 {
     public class DziennikSzkolny3_DB: DbContext
     {
-        public DziennikSzkolny3_DB() :base()
+        public DziennikSzkolny3_DB():base()
         {
 
         }
-
         public DbSet<Nauczyciel> Nauczyciel_DB { get; set; }//
         public DbSet<Uczen> Uczen_DB { get; set; }//
         public DbSet<Klasa> Klasa_DB { get; set; }//
@@ -21,10 +20,5 @@ namespace DziennikSzkolny3.Models
         public DbSet<Uwagi> Uwagi_DB { get; set; }//
         public DbSet<Frekwencja> Frekwencja_DB { get; set; }//
         public DbSet<Adres> Adres_DB { get; set; }//
-
-
-
-
-
     }
 }

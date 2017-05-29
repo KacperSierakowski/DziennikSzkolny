@@ -12,22 +12,23 @@ namespace DziennikSzkolny3.Models
         public int AdresID { get; set; }
         public int NauczycielID { get; set; }       //ID Urzytkownika z tabeli Adres zostało rozdzielona na dwa pola: NauczycielID i UczenID. Oba pola powinny być nullable. Powinno się rozważyć implementację mechanizmu wymuszającego wprowadzenia dokłądnie jednej z dwóch propercji (UczenID, NauczycielID)
         public int UczenID { get; set; }
-        //[Required]
-        //[MaxLength(20), MinLength(2)]
-        //[Display(Name = "Kraj pochodzenia")]
+        [Required]
+        [MaxLength(20), MinLength(2)]
+        [Display(Name = "Kraj pochodzenia")]
         public string Kraj { get; set; }
-        //[Required]
-        //[MaxLength(20), MinLength(2)]
+        [Required]
+        [MaxLength(20), MinLength(2)]
         public string Miejscowosc { get; set; }
-        //[Required]
-        //[MaxLength(20), MinLength(2)]
+        [Required]
+        [MaxLength(20), MinLength(2)]
         public string Ulica { get; set; }
-        //[Required]
-        //[MaxLength(20), MinLength(2)]
-        //[Display(Name = "Numer budynku")]
+        [Required]
+        [MaxLength(20), MinLength(2)]
+        [Display(Name = "Numer budynku")]
         public string NumerBudynku { get; set; }
-
+        [Required]
         public virtual ICollection<Uczen> Uczniowie { get; set; }
+        [Required]
         public virtual ICollection<Nauczyciel> Nauczyciele { get; set; }
 
 
